@@ -1,0 +1,22 @@
+<h1>Flask App running</h1>
+
+<h2> Please enter your parameters below: </h2>
+
+<form method="POST">
+    {# This is a hidden tag in CSRF security feature. #}
+    {{ form.hidden_tag()}}
+    {{form.num_rooms.label}} {{form.num_rooms}}
+    <br>
+    {{form.ptratio.label}} {{form.ptratio}}
+    <br>
+    {{form.chas.label}} {{form.chas}}
+    <br>
+    {{form.high_confidence.label}} {{form.high_confidence}}
+    <br>
+    {{form.submit}}
+
+
+
+
+
+</form>
